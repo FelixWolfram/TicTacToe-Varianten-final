@@ -1,0 +1,51 @@
+/* styles.css */
+.background-pane {
+    -fx-background-color: #000000;
+}
+.slider .axis .axis-label {
+    -fx-text-fill: white; /* ändert die Zahlentextfarbe */
+}
+.button.outline {
+    -fx-background-color: transparent;
+    -fx-border-color: #7C4DFF;
+    -fx-border-width: 2;
+    -fx-border-radius: 8;
+    -fx-background-radius: 8;
+    -fx-text-fill: white;
+    -fx-cursor: hand;
+}
+.button.small {
+    -fx-font-size: 16px;
+    -fx-padding: 8px 16px;
+}
+.button.large {
+    -fx-font-size: 28px;
+    -fx-padding: 18px 36px;
+}
+.button.outline:hover {
+    -fx-background-color: #7C4DFF22;
+    -fx-effect: dropshadow(gaussian, rgba(124,77,255,0.6), 12, 0, 0, 0);
+}
+.button.outline:pressed,
+.button.outline.selected {
+    -fx-background-color: #7C4DFF;
+    -fx-text-fill: white;
+    -fx-effect: dropshadow(gaussian, rgba(124,77,255,0.8), 16, 0, 0, 0);
+}
+#startButton {
+    -fx-background-color: #7C4DFF;
+    -fx-text-fill: white;
+    -fx-font-size: 36px;
+    -fx-padding: 24px 48px;
+    -fx-background-radius: 8;
+    -fx-border-radius: 8;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.3), 8, 0, 0, 4);
+    -fx-cursor: hand;
+}
+#startButton:hover {
+    -fx-background-color: #8C56FF;
+}
+#startButton:pressed {
+    -fx-background-color: #6F3EDD;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.5), 4, 0, 0, 2);
+}

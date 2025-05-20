@@ -1,0 +1,44 @@
+<!-- start-view.fxml -->
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.Region?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.media.MediaView?>
+
+<StackPane xmlns:fx="http://javafx.com/fxml"
+           fx:controller="com.example.fertig.HelloController"
+           stylesheets="@styles.css"
+           styleClass="background-pane">
+    <MediaView fx:id="mediaView"
+               fitWidth="800" fitHeight="600"
+               preserveRatio="false"/>
+    <VBox fx:id="mainContainer"
+          alignment="TOP_CENTER"
+          spacing="20">
+        <padding>
+            <Insets top="20" right="20" bottom="20" left="20"/>
+        </padding>
+        <Region VBox.vgrow="ALWAYS" prefHeight="150"/>
+        <VBox fx:id="variantBox"
+              alignment="CENTER"
+              spacing="15">
+            <Button fx:id="classicButton"
+                    text="Klassisches TicTacToe"
+                    styleClass="outline small"/>
+            <Button fx:id="infinityButton"
+                    text="Infinity-TicTacToe"
+                    styleClass="outline small"/>
+            <Button fx:id="metaButton"
+                    text="Meta-TicTacToe"
+                    styleClass="outline small"/>
+        </VBox>
+        <Region prefHeight="20"/>
+        <Button fx:id="startButton"
+                text="Spiel starten"
+                onAction="#startGame"
+                styleClass="large"
+                id="startButton"/>
+        <Region VBox.vgrow="ALWAYS"/>
+    </VBox>
+</StackPane>
